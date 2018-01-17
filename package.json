@@ -12,8 +12,8 @@
   },
   "author": "shubham soni",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shubhamsony/Chat-app/issues"
-  },
-  "homepage": "https://github.com/shubhamsony/Chat-app#readme"
+  "dependencies": {
+    "express": "*",
+    "socket.io": "*"
+  }
 }
