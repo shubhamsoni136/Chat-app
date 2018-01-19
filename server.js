@@ -12,6 +12,15 @@ server.listen(process.env.PORT || 3000);
 app.get('/',function(req,res){
   res.sendFile(path.join(__dirname,'index.html'));
 });
+app.get('/new.js',function(req,res){
+  res.sendFile(path.join(__dirname,'new.js'));
+});
+app.get('/main.css',function(req,res){
+  res.sendFile(path.join(__dirname, 'main.css'));
+});
+app.get('/logo.png',function(req,res){
+  res.sendFile(path.join(__dirname, 'logo.png'));
+})
 
 io.sockets.on('connection',function(socket){
   connections.push(socket);
