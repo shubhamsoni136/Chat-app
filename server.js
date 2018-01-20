@@ -7,7 +7,7 @@ var io = require('socket.io').listen(server);
 users = [];
 connections = [];
 
-server.listen(process.env.PORT || 3000);
+server.listen(8080);
 
 app.get('/',function(req,res){
   res.sendFile(path.join(__dirname,'index.html'));
